@@ -1,0 +1,172 @@
+.c-contact {
+    form {
+        width: 94%;
+    margin: 0 auto;
+    }
+    &__inner {
+        width: 1090px;
+        margin: 80px auto 0;
+        @include overTab {
+            width: 100%;
+        }
+    }
+    span {
+        color: red;
+        margin-left: 10px;
+    }
+    dl {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.6rem;
+        @include overTab {
+            display: block;
+        }
+    }
+    dt {
+        width: 12em;
+        margin: 0 0 50px;
+        @include overTab {
+            margin: 0 0 5px;
+        }
+    }
+
+    dd {
+        width: calc(100% - 12em);
+        margin: 0 0 50px;
+        position: relative;
+        @include overTab {
+            width: 100%;
+            margin: 0 0 20px;
+        }
+        &.pref-blk {
+            width: 400px;
+            margin: 0 430px 50px 0;
+            position: relative;
+            border: 1px solid #c2c2c2;
+            display: block;
+            box-sizing: border-box;
+            @include overTab {
+                width: 100%;
+            }
+            &::before {
+                position: absolute;
+                top: 1em;
+                right: 1em;
+                width: 0;
+                height: 0;
+                padding: 0;
+                content: '';
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
+                border-top: 6px solid #c2c2c2;
+                pointer-events: none;
+            }
+
+            select {
+                width: 100%;
+                padding: 0 0 0 1em;
+                height: 40px;
+                cursor: pointer;
+                border: none;
+                box-shadow: none;
+                background: none;
+                color: #666;
+                font-size: 1.6rem;
+                box-sizing: border-box;
+            }
+        }
+    }
+    textarea {
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif !important;
+        font-size: 1.8rem;
+        width: 600px;
+        height: 300px;
+        border: 1px solid #c2c2c2;
+        @include overTab {
+            width: 100%;
+            height: 200px;
+            box-sizing: border-box;
+        }
+    }
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"] {
+        font-size: 1.8rem;
+        height: 40px;
+        width: 300px;
+        border: 1px solid #c2c2c2;
+        padding: 10px;
+        box-sizing: border-box;
+        @include overTab {
+            width: 100%;
+        }
+    }
+    input[type="radio"]{
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        border: 1px solid #c2c2c2;
+        vertical-align: -4px;
+        box-sizing: border-box;
+        &:checked {
+            background: #c2c2c2;
+        }
+    }
+    input[type="submit"]{
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        width: 200px;
+        height: 40px;
+        text-align: center;
+        border: 1px solid #c2c2c2;
+        background: #eee;
+        border-radius: 5px;
+        margin: 0 0 0 12em;
+        @include overTab {
+            width: 100%;
+            margin: 0 0 40px;
+        }
+    }
+    .notes {
+        margin: 0 0 30px calc(1.6rem * 12);
+        @include overTab {
+            margin: 0 0 30px;
+            text-align: right;
+        }
+        span {
+            color: #f00;
+        }
+    }
+    &::placeholder,.check-policy {
+        color: #3498db;
+    }
+    .error {
+        position: absolute;
+        left: 0;
+        padding: 3px 3px 2px;
+        background-color: #f66;
+        border-radius: 5px;
+        font-size: 1.4rem;
+        color: #fff;
+        transform: translateY(-2.7em);
+        transform: all 1s;
+        opacity: 0;
+        @include overTab {
+            right: 0;
+            left: auto;
+            top: 0;
+        }
+        .active {
+            opacity: 1;
+        }
+        &::after {
+            content: ' ';
+            position: absolute;
+            top: 100%;
+            left: 15px;
+            border: 7px solid transparent;
+            border-top-color: #f66;
+            margin-left: 1px;
+        }
+    }
+}

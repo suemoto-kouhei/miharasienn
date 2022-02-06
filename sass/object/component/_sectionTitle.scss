@@ -1,0 +1,16 @@
+.c-section__title {
+    text-align: center;
+    font-size: 4rem;
+    color: #6a573d;
+    line-height: 1.2;
+    @include overTab {
+        font-size: 3rem;
+    }
+
+    span {
+        font-size: 3rem;
+        font-weight: normal;
+        display: block;
+        font-family: "EB Garamond", serif;
+    }
+}

@@ -1,0 +1,81 @@
+.p-price {
+    &__inner {
+        width: 80%;
+        margin: 80px auto 0;
+        @include overTab {
+            width: 90%;
+        }
+    }
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        @include overTab {
+            display: block;
+        }
+    }
+    &__item {
+        width: calc(90% / 3);
+        border: solid 1px #C2C2C2;
+        padding: .5%;
+        margin-top: 30px;
+        margin: 0 auto;
+        @include overTab {
+            width: 100%;
+            margin-top: 40px;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+    &__totalPrice {
+        text-align: center;
+        border-bottom: 1px solid #C2C2C2;
+        min-height: 230px;
+        padding: 2%;
+        overflow: hidden;
+        h3 {
+            color: #003D4B;
+        }
+    }
+    &__prepaidPrice {
+        span {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+    }
+    &__sarvice {
+        color: #ffffff;
+        display: block;
+        background-color: #F28E1E;
+        margin: 30px auto 0;
+        min-width: 190px;
+        @include overTab {
+            width: 80px;
+        }
+    }
+    &__list {
+        padding: 0 10px;
+    }
+    &__row {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        &:first-child {
+            margin-top: 0;
+        }
+        dd {
+            font-weight: bold;
+        }
+    }
+    &__monthly {
+        border-top: 1px solid #C2C2C2;
+        padding-top: 10px;
+        text-align: center;
+    }
+    &__ollPrice {
+        span {
+        font-size: 3rem;
+        font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,201 @@
+.l-header {
+    width: 100%;
+    box-shadow: 0px 6px 3px -3px rgba(0, 0, 0, .1);
+    position: fixed;
+    z-index: 1000;
+    background: #ffffff;
+    @include overTab {
+    }
+    &__inner {
+        width: 90%;
+        background: #ffffff;
+        margin: 0 auto;
+        box-sizing: border-box;
+        height: 130px;
+        position: relative;
+        @include overTab {
+            height: 80px;
+            width: 100%;
+            position: fixed;
+            z-index: 1000;
+            padding: 10px 0 0 10px;
+        }
+    }
+    &__mainWrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+        @include overTab {
+            vertical-align: middle;
+            margin-bottom: 0;
+        }
+
+    }
+    &__titleWrap {
+        display: flex;
+    }
+    &__logo {
+        width: 50px;
+        display: block;
+        @include overTab {
+            padding-top: 10px;
+            width: 30px;
+        }
+        a {
+            cursor: pointer;
+        }
+    }
+    &__title {
+        margin-left: 12px;
+        line-height: 1.5;
+        @include overTab {
+            padding-top: 10px;
+            font-size: 1rem;
+        }
+        span {
+            display: block;
+            font-size: 3rem;
+            font-weight: bold;
+            @include overTab {
+                font-size: 2rem;
+            }
+        }
+    }
+    &__contact {
+        @include overTab {
+            display: none;
+        }
+    }
+    &__contactlist {
+        @include overTab {
+            display: block;
+        }
+        img {
+            height: 30px;
+            width: 30px;
+            margin-bottom: .2em;
+        }
+        a {
+            color: #ffffff;
+        }
+    }
+    &__listSp {
+        display: none;
+        @include overTab {
+        display: block;
+        width: 100%;
+        a {
+            display: block;
+            color: #ffffff;
+            margin-top: 40px;
+            border-radius: 0;
+            @include overTab {
+                margin-top: 5%;
+                font-size: 2rem;
+            }
+        }
+        img {
+            height: 50px;
+            width: 50px;
+            @include overTab {
+            }
+        }
+        }
+    }
+    &__contactWrap {
+        background: #B9AD77;
+        min-width: 200px;
+        padding: 1rem;
+        border-radius: 50px;
+        cursor: pointer;
+        overflow: hidden;
+        width: 80%;
+        @include overTab {
+            margin-left: 10%;
+            padding: 0;
+        }
+        img {
+            margin-right: 10px;
+            @include overTab {
+                margin-top: 10px;
+                padding-top: 10px;
+            }
+        }
+        a {
+            display: block;
+            width: 100%;
+            line-height: 50px;
+        }
+        &:hover {
+            opacity: .5;
+            transition-duration: 0.5s;
+            color: #fff;
+        }
+    }
+    &__nav {
+        @include overTab {
+            position: fixed;
+            width: 100%;
+            left: 100%;
+            background: rgba(255,255,255,.95);
+            height: 100vh;
+            transition: all .4s;
+            &.is-active {
+                left: 0;
+            }
+        }
+
+    }
+    &__list {
+        font-family: "times new roman", 游明朝, YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", HG明朝E, "ＭＳ 明朝", "Sawarabi Mincho", serif;;
+        display: flex;
+        justify-content: space-between;
+       @include overTab {
+           display: block;
+           width: 100%;
+            top: 40%;
+            left: 50%;
+       }
+        li {
+            width: calc(100% / 5);
+            border-right: 1px solid #B9AD77;
+            border-left: 1px solid #B9AD77;
+            text-align: center;
+            cursor: pointer;
+            @include overTab {
+                width: 80%;
+                margin: 0 auto;
+                margin-top: 3%;
+                text-align: inherit;
+                border-bottom: 1px solid #B9AD77;
+                border-right: none;
+                border-left: none;
+                &:first-child {
+                    margin-top: 20px;
+                }
+            }
+            a {
+                width: 100%;
+                display: block;
+                @include overTab {
+                    font-size: 2rem;
+                }
+                &:hover {
+                    color: #ffffff;
+                    background: #B9AD77;
+                    transition: .8s ease;
+                }
+            }
+            &:first-child {
+                border-left: none;
+
+            }
+            &:nth-child(5) {
+                border-right: none;
+            }
+        }
+    }
+}
+
+

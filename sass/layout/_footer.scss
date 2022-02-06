@@ -1,0 +1,86 @@
+.l-footer {
+    background: #003D4B;
+    &__inner {
+        color: #ffffff;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 80px;
+    }
+    &__wrap {
+        margin: 0 auto;
+        font-family: 'EB Garamond', serif;
+    }
+    &__title {
+        text-align: center;
+        font-size: 3rem;
+        @include overTab {
+            font-size: 2rem;
+        }
+    }
+    &__tel {
+        font-size: 3rem;
+        margin-right: 50px;
+        @include overTab {
+            margin-right: 0;
+            font-size: 2rem;
+        }
+    }
+    &__contact {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        @include overTab {
+            display: block;
+            text-align: center;
+        }
+        p {
+            @include overTab {
+                margin-top: 20px;
+            }
+        }
+    }
+    &__sns {
+        margin-top: 50px;
+    }
+    &__list {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    &__item {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: #666;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        vertical-align: middle;
+        cursor: pointer;
+        opacity: 1;
+        @include overTab {
+            width: 50px;
+            height: 50px;
+        }
+        img {
+            min-width: 50px;
+            max-height: 50px;
+            @include overTab {
+                min-width: 30px;
+                max-height: 30px;
+            }
+        }
+        &:nth-child(2) {
+            margin: 0 20px;
+        }
+        &:hover {
+            opacity: .5;
+            transition: .5s ease;
+        }
+    }
+    &__copyright {
+        margin-top: 50px;
+        color: #ffffff;
+        text-align: center;
+    }
+}

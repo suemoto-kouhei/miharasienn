@@ -1,0 +1,26 @@
+.c-archive-news{
+    &__inner {
+        width: 90%;
+        margin: 0 auto;
+    }
+    &__title {
+        margin-top: 60px;
+        text-align: center;
+        font-size: 4rem;
+        color: #6a573d;
+        line-height: 1.2;
+        @include overTab {
+            font-size: 3rem;
+            margin-top: 0;
+        }
+    }
+    &__subTitle {
+        text-align: center;
+        margin: 40px auto 40px;
+        font-size: 2rem;
+        background: #003D4B;
+        color: #ffffff;
+        display: block;
+        max-width: 160px;
+    }
+}

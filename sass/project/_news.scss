@@ -1,0 +1,37 @@
+.p-news {
+    &__inner {
+        width: 80%;
+        margin: 80px auto 0;
+        @include overTab {
+            width: 90%;
+        }
+    }
+    &__item {
+        display: flex;
+        margin-top: 20px;
+        transition: .8s all;
+        cursor: pointer;
+        border-bottom: 3px dotted #BFB483;
+        @include overTab {
+        width: 100%;
+        }
+        &:hover {
+            color: #ffffff;
+            background-color: #BFB483;
+            .p-news__link {
+                color: #ffffff;
+                transition: .8s all;
+            }
+        }
+
+    }
+    &__date {
+        min-width:120px ;
+        margin-right: 12px;
+    }
+    &__title {
+        a {
+            cursor: pointer;
+        }
+    }
+}
